@@ -1,0 +1,83 @@
+body {
+    background-color: #6093BF;
+    margin: 0; /* this and padding below allow my header container to fill side to side and up to the top of the screen */
+    padding: 0;
+}
+
+h1 {
+    /* font-size: 4rem; */
+    font-family: "Playwrite AU TAS", cursive;
+    /* align-self: center; */
+    /* text-align: right; */
+    color: #0C2D48;
+}
+
+/* h2 {
+    font-size: 3rem;
+    font-family: "Playwrite AU TAS", cursive;
+    text-align: center;
+    color: #F2E6D0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+} */
+
+#myJumbotron {
+    font-family: "Playwrite AU TAS", cursive;
+    text-align: center;
+}
+
+#carousel-caption-placement {
+    display: flex;
+    align-items: start;
+}
+
+.crusader-text {
+    font-family: "Playwrite AU TAS", cursive;
+    text-align: right;
+}
+
+.header {
+    background-image: linear-gradient(to bottom right, #6093BF, #9AC1D9, #F2E6D0, #8C5627);
+    background-size: 150% 150%;
+    animation: gradient-animation 16s ease infinite;
+}
+
+/* .header {
+    background-image: linear-gradient(to bottom right, #6093BF, #9AC1D9, #F2E6D0, #8C5627);
+    background-size: 150% 150%;
+    animation: gradient-animation 16s ease infinite;
+    display: grid;
+    grid-template-columns: 1.25fr 2fr;
+    gap: 3rem;
+    justify-content: space-around;
+} */
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+.header-pic {
+    margin-top: 20px;
+    width: 100vh;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+#myCarousel .carousel-item img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 75vh;
+    overflow: hidden;
+}
+
+#copyright {
+    color: #0c4d53;
+}
